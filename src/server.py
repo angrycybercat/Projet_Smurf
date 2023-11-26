@@ -1,6 +1,7 @@
 import scapy.all as scapy
 from scapy.layers.l2 import Ether
 from scapy.layers.inet import IP
+import time
 
 def packet_handler(packet):
     if packet.haslayer(scapy.ICMP):
@@ -18,6 +19,7 @@ def packet_handler(packet):
             print(icmp_packet.type)
             icmp_type = "Unknown"
 
+        print(time.asctime(time.localtime(time.time())))
         print(f"ICMP Type: {icmp_type}")
         print(f"Source MAC Address: {src_mac}")
         print(f"Destination MAC Address: {dst_mac}")
