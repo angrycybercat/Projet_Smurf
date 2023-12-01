@@ -1,4 +1,5 @@
 from scapy.all import *
+import udp_sniffer
 
 def smurf_attack(target_ip, spoofed_ip):
     # Crée un paquet UDP avec l'IP falsifiée en tant que source
