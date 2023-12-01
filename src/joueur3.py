@@ -1,3 +1,12 @@
+"""\
+This script sends forged ICMP echo packets
+Change variables before running
+
+Author: Nabil
+
+Usage: sudo python joueur3.py
+"""
+
 from scapy.all import *
 from scapy.layers.inet import IP, ICMP
 

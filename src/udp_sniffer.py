@@ -1,3 +1,11 @@
+"""\
+This script contains a method and a main function that sniffs UDP traffic
+
+Author: angrycybercat
+
+Usage: import udp_sniffer  OR  sudo python udp_sniffer.py
+"""
+
 from scapy.all import *
 
 def packet_callback(packet):

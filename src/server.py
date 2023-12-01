@@ -1,3 +1,11 @@
+"""\
+This script sniffs ICMP traffic
+
+Author: Ombrustou
+
+Usage: sudo python server.py
+"""
+
 import scapy.all as scapy
 from scapy.layers.l2 import Ether
 from scapy.layers.inet import IP
